@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import ProductCard from "./components/ProductCard";
 
 const App = () => {
   const [allProducts, setAllProducts] = useState();
@@ -31,15 +32,7 @@ const App = () => {
 
       <div className="main__products">
         {filteredProducts.map((product) => (
-          <div className="main__products__product" key={product.id}>
-            <img
-              className="main__products__product__img"
-              src={product.image}
-              alt={product.title}
-            />
-            <p>{product.title}</p>
-            <p>{product.price}$</p>
-          </div>
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
     </main>
