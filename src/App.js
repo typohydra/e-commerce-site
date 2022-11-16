@@ -23,11 +23,11 @@ const App = () => {
   return (
     <main className="main">
       <nav className="main__nav">
-        <p className="main__nav__item" onClick={() => handleFilter('all')}>All</p>
-        <p className="main__nav__item" onClick={() => handleFilter('electronics')}>Electronics</p>
-        <p className="main__nav__item" onClick={() => handleFilter('jewelery')}>Jewelery</p>
-        <p className="main__nav__item" onClick={() => handleFilter('men\'s clothing')}>Men's clothing</p>
-        <p className="main__nav__item" onClick={() => handleFilter('women\'s clothing')}>Women's clothing</p>
+        <button className="main__nav__btn" onClick={() => handleFilter('all')}>All</button>
+        <button className="main__nav__btn" onClick={() => handleFilter('electronics')}>Electronics</button>
+        <button className="main__nav__btn" onClick={() => handleFilter('jewelery')}>Jewelery</button>
+        <button className="main__nav__btn" onClick={() => handleFilter('men\'s clothing')}>Men's clothing</button>
+        <button className="main__nav__btn" onClick={() => handleFilter('women\'s clothing')}>Women's clothing</button>
       </nav>
 
       <div className="main__products">
